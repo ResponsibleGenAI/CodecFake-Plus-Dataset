@@ -1,7 +1,21 @@
-# 🎧 CodecFake+: A Large-Scale Neural Audio Codec-Based Deepfake Speech Dataset
-CodecFake+ is a large-scale benchmark designed to study **neural codec–based deepfake speech detection**. 
+# 🎧 CodecFake+: A Large-Scale Neural Audio Codec–Based Deepfake Speech Dataset
 
-The official webpage CodecFake+ project page: https://responsiblegenai.github.io/CodecFake-Plus-Dataset/.
+> A benchmark for studying **neural codec–based deepfake speech detection** and **robustness analysis**.
+
+---
+
+## 🧩 Overview
+**CodecFake+** is a large-scale benchmark designed to evaluate the detection and generalization capabilities of models across diverse neural audio codec–generated deepfakes.  
+It enables controlled, taxonomy-aware analysis for codec-based deepfake research.
+
+---
+
+## 📰 News
+🚧 The **CodecFake+** project page is currently under construction.  
+Thank you for your patience and continued interest.
+
+🔗 **Official webpage:** [responsiblegenai.github.io/CodecFake-Plus-Dataset](https://responsiblegenai.github.io/CodecFake-Plus-Dataset/)
+
 
 ## Citations
 If you find our dataset useful, please consider citing our accompanying papers.
