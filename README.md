@@ -1,6 +1,6 @@
 # 🎧 CodecFake+: A Large-Scale Neural Audio Codec–Based Deepfake Speech Dataset
 
-> A benchmark for studying **neural codec–based deepfake speech detection** and **robustness analysis**.
+> A benchmark for studying **neural codec–based deepfake speech detection**.
 
 ---
 
