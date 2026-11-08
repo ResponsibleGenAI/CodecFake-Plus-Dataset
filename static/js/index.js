@@ -37,9 +37,8 @@ document.addEventListener('keydown', function(event) {
 });
 
 // Copy BibTeX to clipboard
-function copyBibTeX() {
-    const bibtexElement = document.getElementById('bibtex-code');
-    const button = document.querySelector('.copy-bibtex-btn');
+function copyBibTeX(button, codeId) {
+    const bibtexElement = document.getElementById(codeId);
     const copyText = button.querySelector('.copy-text');
     
     if (bibtexElement) {
@@ -140,3 +139,12 @@ $(document).ready(function() {
     setupVideoCarouselAutoplay();
 
 })
+
+// Play one audio sample at a time
+document.addEventListener('play', function(event) {
+    document.querySelectorAll('audio').forEach(function(audio) {
+        if (audio !== event.target) {
+            audio.pause();
+        }
+    });
+}, true);

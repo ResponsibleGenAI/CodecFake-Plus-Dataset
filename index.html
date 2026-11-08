@@ -3,459 +3,422 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <!-- Primary Meta Tags -->
-  <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="CodecFake+ Dataset">
-  <!-- TODO: Write a compelling 150-160 character description of your research -->
-  <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Add 5-10 relevant keywords for your research area -->
-  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
-  <!-- TODO: List all authors -->
-  <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME">
+
+  <meta name="title" content="CodecFake+ Audio Demo">
+  <meta name="description" content="Listen to speech re-synthesized by neural audio codecs from the CodecFake+ dataset, compared with the original VCTK recordings.">
+  <meta name="keywords" content="CodecFake, CodecFake+, audio demo, audio deepfake detection, neural audio codec">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
-  
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="article">
-  <!-- TODO: Replace with your institution or lab name -->
-  <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
-  <!-- TODO: Same as paper title above -->
-  <meta property="og:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Replace with your actual website URL -->
-  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
-  <!-- TODO: Create a 1200x630px preview image and update path -->
-  <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
-  <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
-  <meta property="article:author" content="FIRST_AUTHOR_NAME">
-  <meta property="article:section" content="Research">
-  <meta property="article:tag" content="KEYWORD1">
-  <meta property="article:tag" content="KEYWORD2">
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- TODO: Replace with your lab/institution Twitter handle -->
-  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
-  <!-- TODO: Replace with first author's Twitter handle -->
-  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
-  <!-- TODO: Same as paper title above -->
-  <meta name="twitter:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Same as social preview image above -->
-  <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ResponsibleGenAI">
+  <meta property="og:title" content="CodecFake+ Audio Demo">
+  <meta property="og:description" content="Listen to speech re-synthesized by neural audio codecs from the CodecFake+ dataset, compared with the original VCTK recordings.">
+  <meta property="og:url" content="https://responsiblegenai.github.io/CodecFake-Plus-Dataset/">
 
-  <!-- Academic/Research Specific -->
-  <meta name="citation_title" content="PAPER_TITLE">
-  <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
-  <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
-  <meta name="citation_publication_date" content="2024">
-  <meta name="citation_conference_title" content="CONFERENCE_NAME">
-  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
-  
-  <!-- Additional SEO -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="CodecFake+ Audio Demo">
+  <meta name="twitter:description" content="Listen to speech re-synthesized by neural audio codecs from the CodecFake+ dataset, compared with the original VCTK recordings.">
+
   <meta name="theme-color" content="#2563eb">
-  <meta name="msapplication-TileColor" content="#2563eb">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  
-  <!-- Preconnect for performance -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://ajax.googleapis.com">
   <link rel="preconnect" href="https://documentcloud.adobe.com">
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
 
+  <title>CodecFake+ Audio Demo</title>
 
-  <!-- TODO: Replace with your paper title and authors -->
-  <title>CodecFake+ Dataset</title>
-  
-  <!-- Favicon and App Icons -->
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link rel="apple-touch-icon" href="static/images/favicon.ico">
-  
-  <!-- Critical CSS - Load synchronously -->
+
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-  
-  <!-- Non-critical CSS - Load asynchronously -->
+
   <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  
-  <!-- Fallback for browsers that don't support preload -->
+
   <noscript>
     <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
     <link rel="stylesheet" href="static/css/bulma-slider.min.css">
     <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   </noscript>
-  
-  <!-- Fonts - Optimized loading -->
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <!-- HuggingFace -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  
-  <!-- Defer non-critical JavaScript -->
   <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
   <script defer src="static/js/bulma-carousel.min.js"></script>
   <script defer src="static/js/bulma-slider.min.js"></script>
   <script defer src="static/js/index.js"></script>
-  
-  <!-- Structured Data for Academic Papers -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ScholarlyArticle",
-    "headline": "PAPER_TITLE",
-    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
-    "author": [
-      {
-        "@type": "Person",
-        "name": "FIRST_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      },
-      {
-        "@type": "Person",
-        "name": "SECOND_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      }
-    ],
-    "datePublished": "2024-01-01",
-    "publisher": {
-      "@type": "Organization",
-      "name": "CONFERENCE_OR_JOURNAL_NAME"
-    },
-    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
-    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
-    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
-    "abstract": "FULL_ABSTRACT_TEXT_HERE",
-    "citation": "BIBTEX_CITATION_HERE",
-    "isAccessibleForFree": true,
-    "license": "https://creativecommons.org/licenses/by/4.0/",
-    "mainEntity": {
-      "@type": "WebPage",
-      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
-    },
-    "about": [
-      {
-        "@type": "Thing",
-        "name": "RESEARCH_AREA_1"
-      },
-      {
-        "@type": "Thing", 
-        "name": "RESEARCH_AREA_2"
-      }
-    ]
-  }
-  </script>
-  
-  <!-- Website/Organization Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "INSTITUTION_OR_LAB_NAME",
-    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
-    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
-    "sameAs": [
-      "https://twitter.com/YOUR_TWITTER_HANDLE",
-      "https://github.com/YOUR_GITHUB_USERNAME"
-    ]
-  }
-  </script>
 </head>
 <body>
 
-
-  <!-- Scroll to Top Button -->
   <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
     <i class="fas fa-chevron-up"></i>
   </button>
 
   <main id="main-content">
-  <section class="hero">
+  <section class="hero" id="demo-header">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">CodecFake+: A Large-Scale Neural Audio Codec-Based Deepfake Speech Dataset</h1>
+            <h1 class="title is-1 publication-title">CodecFake+ Audio Demo</h1>
+            <p class="is-size-5">Codec-Based Resynthesized Data as a Proxy for Detecting CodecFake Speech</p>
+
             <div class="is-size-5 publication-authors">
-              <!-- TODO: Replace with your paper authors and their personal links -->
-              <span class="author-block">
-                <a href="https://xjchen.tech" target="_blank">Xuanjun Chen</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="https://www.jiaweidu.top/" target="_blank">Jiawei Du</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="" target="_blank">Haibin Wu</a><sup>†</sup>,</span>
-                <span class="author-block">
-                  <a href="" target="_blank">Lin Zhang</a><sup></sup>,</span>
-                <span class="author-block">
-                  <a href="" target="_blank">I-Ming Lin</a><sup></sup>,</span>
-                <span class="author-block">
-                  <a href="" target="_blank">I-Hsiang Chiu</a><sup></sup>,</span>
-                <span class="author-block">
-                  <a href="" target="_blank">Wenze Ren</a><sup></sup>,</span>
-                <span class="author-block">
-                  <a href="" target="_blank">Yuan Tseng</a><sup></sup>,</span>
-                <span class="author-block">
-                  <a href="" target="_blank">Yu Tsao</a><sup></sup>,</span>
-                <span class="author-block">
-                  <a href="" target="_blank">Jyh-Shing Roger Jang</a><sup></sup>,</span>
-                <span class="author-block">
-                  <a href="" target="_blank">Hung-yi Lee</a>
-                </span>
-                  </div>
+              <span class="author-block"><a href="https://xjchen.tech" target="_blank">Xuanjun Chen</a><sup>*</sup>,</span>
+              <span class="author-block"><a href="https://www.jiaweidu.top/" target="_blank">Jiawei Du</a><sup>*</sup>,</span>
+              <span class="author-block"><a href="https://hbwu-ntu.github.io/" target="_blank">Haibin Wu</a><sup>†</sup>,</span>
+              <span class="author-block"><a href="https://zlin0.github.io/" target="_blank">Lin Zhang</a>,</span>
+              <span class="author-block"><a href="https://www.linkedin.com/in/ym-lin/" target="_blank">I-Ming Lin</a>,</span>
+              <span class="author-block"><a href="https://scholar.google.com/citations?user=9FnMJZ4AAAAJ&amp;hl=zh-TW" target="_blank">I-Hsiang Chiu</a>,</span>
+              <span class="author-block"><a href="https://rezzsl.github.io/" target="_blank">Wenze Ren</a>,</span>
+              <span class="author-block"><a href="https://roger-tseng.github.io/" target="_blank">Yuan Tseng</a>,</span>
+              <span class="author-block"><a href="https://homepage.citi.sinica.edu.tw/pages/yu.tsao/index_en.html" target="_blank">Yu Tsao</a>,</span>
+              <span class="author-block"><a href="http://mirlab.org/jang/cv/cv.asp" target="_blank">Jyh-Shing Roger Jang</a>,</span>
+              <span class="author-block"><a href="https://speech.ee.ntu.edu.tw/~hylee/index.php" target="_blank">Hung-yi Lee</a></span>
+            </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <!-- TODO: Replace with your institution and conference/journal info -->
-                      <span class="author-block">
-                          National Taiwan University
-                          <sup></sup>,
-                          John Hopkins University
-                          <sup></sup>,
-                          Academia Sinica
-                      </span>
-                    <!-- TODO: Remove this line if no equal contribution -->
-                    <span class="eql-cntrb">
-                      <small>
-                        <br>
-                        <sup>*</sup> Indicates Equal Contribution
-                        <span class="sep">,</span>
-                        <sup>†</sup> Indicates Corresponding Author
-                      </small></span>
-                  </div>
+            <div class="is-size-6 publication-authors">
+              National Taiwan University · Johns Hopkins University · Academia Sinica
+              <span class="eql-cntrb">
+                <small>
+                  <br>
+                  <sup>*</sup> Indicates Equal Contribution
+                  <span class="sep">,</span>
+                  <sup>†</sup> Indicates Corresponding Author
+                </small>
+              </span>
+            </div>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- TODO: Update with your arXiv paper ID -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/abs/2501.08238" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
+            <div class="publication-venue">IEEE Transactions on Audio, Speech and Language Processing, vol. 34, 2026</div>
 
-                    <!-- TODO: Add your supplementary material PDF or remove this section -->
-                      <!-- <span class="link-block">
-                        <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Supplementary</span>
-                      </a> -->
-                  </span>
-
-                  <!-- TODO: Replace with your GitHub repository URL -->
-                  <span class="link-block">
-                    <a href="https://github.com/ResponsibleGenAI/CodecFake-Plus-Dataset" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="https://doi.org/10.1109/TASLPRO.2026.3692291" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                    <span>Paper (IEEE)</span>
                   </a>
                 </span>
 
-                <!-- TODO: Update with your arXiv paper ID -->
                 <span class="link-block">
                   <a href="https://arxiv.org/abs/2501.08238" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+                    <span class="icon"><i class="ai ai-arxiv"></i></span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
 
-                <!-- Hugging Face link -->
-              <span class="link-block">
-                <a href="https://huggingface.co/datasets/CodecFake/CodecFake_Plus_Dataset"
-                   target="_blank"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="fa-brands fa-hugging-face"></i>
-                  </span>
-                  <span>Hugging Face</span>
-                </a>
-              </span>
+                <span class="link-block">
+                  <a href="https://huggingface.co/datasets/CodecFake/CodecFake_Plus_Dataset" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon" aria-hidden="true">🤗</span>
+                    <span>Dataset</span>
+                  </a>
+                </span>
+
+                <span class="link-block">
+                  <a href="https://github.com/ResponsibleGenAI/CodecFake-Plus-Dataset" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fab fa-github"></i></span>
+                    <span>GitHub</span>
+                  </a>
+                </span>
+              </div>
             </div>
+
+            <div class="demo-data-groups">
+              <div class="demo-data-group">
+                <p class="demo-data-title">Proxy training data</p>
+                <div class="demo-stats">
+                  <p class="demo-stats-label demo-span-3">CoRS</p>
+                  <div class="demo-stat"><strong>31</strong><span>Neural Codecs</span></div>
+                  <div class="demo-stat"><strong>110</strong><span>Speakers</span></div>
+                  <div class="demo-stat"><strong>1.4M+</strong><span>Clips</span></div>
+                </div>
+                <p class="demo-data-note">VCTK speech re-synthesized by open-source neural audio codecs, used as proxy data for training deepfake detectors.</p>
+              </div>
+              <div class="demo-data-group">
+                <p class="demo-data-title">Evaluation data</p>
+                <div class="demo-stats">
+                  <p class="demo-stats-label demo-span-3">CoSG Eval</p>
+                  <div class="demo-stat"><strong>17</strong><span>Systems</span></div>
+                  <div class="demo-stat"><strong>9</strong><span>Codec Types</span></div>
+                  <div class="demo-stat"><strong>1,797</strong><span>Clips</span></div>
+                </div>
+                <p class="demo-data-note"><span class="demo-soon-label">CoSG ExtEval coming soon:</span> an extended evaluation set with 40 unseen CoSG systems and long-form audio. <a href="https://huggingface.co/datasets/CodecFake/CodecFake_Plus_Dataset#dataset-overview" target="_blank">Details →</a></p>
+              </div>
+            </div>
+
+            <p>Listen to original VCTK speech and its codec re-synthesized versions. <a href="#samples">Jump to audio samples</a></p>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="section">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">News</h2>
-    <p class="subtitle has-text-centered">
-      The ``CodecFake+'' project page is currently under development. Thank you for your kind patience and continued interest in our work.
-    </p>
-  </div>
-</section>
+  <section class="section" id="overview">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">What is CodecFake+?</h2>
+      <p class="has-text-justified">
+        <strong>CodecFake+</strong> is a large-scale dataset for detecting deepfake speech produced by codec-based speech generation (CoSG) systems.
+        Most CoSG systems are not publicly available, so CodecFake+ uses codec re-synthesized speech (CoRS) from 31 open-source neural audio codecs as proxy training data, and evaluates detectors on audio collected from 17 CoSG systems.
+        A taxonomy of vector quantizer, auxiliary objective, and decoder type helps reveal which codec properties matter for detection.
+      </p>
+      <figure>
+        <img src="static/images/codecfake_overview.png" alt="Three CodecFake detection scenarios, each with a training stage and a testing stage: a traditional TTS/VC dataset, the previous CodecFake dataset, and the CodecFake+ dataset." width="1412" height="955">
+        <figcaption>
+          <strong>CodecFake detection scenarios.</strong>
+          (a) Traditional dataset: trained on conventional TTS/VC data, the model struggles with CodecFake detection.
+          (b) Previous CodecFake dataset: a small-scale codec re-synthesis dataset for detecting EnCodec-based CodecFake.
+          (c) CodecFake+: a large-scale dataset enables better CodecFake detection and supports multi-level analysis.
+        </figcaption>
+      </figure>
+    </div>
+  </section>
 
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <!-- TODO: Replace with your paper abstract -->
-          <p>
-            With the rise of neural audio codecs, codec-based speech generation (CoSG) systems can produce highly realistic speech, posing new risks of deepfakes—referred to as CodecFake. While detection is increasingly critical, existing systems are mainly designed for traditional synthesis methods and often fail against CodecFake. 
-            To address this gap, we introduce CodecFake+, the largest and most diverse dataset for codec-based deepfake detection. 
-            It includes training data re-synthesized from 31 open-source neural codecs and evaluation data collected from 17 advanced CoSG models. 
-            The codec re-synthesized data is not fake speech, but serves as a proxy for CoSG data detection.
-            We also propose a comprehensive taxonomy that categorizes codecs based on three key components: vector quantizer, auxiliary objectives, and decoder type. This taxonomy enables multi-level analysis to uncover key factors for detection. 
-            At the codec level, we validate the effectiveness of using codec re-synthesized speech (CoRS) for large-scale training. At the taxonomy level, we find that disentanglement-based objectives and frequency-domain decoders improve detection. Finally, we show that balancing training data across decoder types further enhances performance, even surpassing models trained solely on CoSG data. 
-            Overall, CodecFake+ provides a valuable foundation for advancing both general and fine-grained detection of codec-based deepfakes.
-          </p>
-        </div>
+  <section class="section" id="samples">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Audio Samples</h2>
+      <p class="subtitle has-text-centered">
+        Samples from the CoRS set. Re-synthesized speech serves as a proxy for codec-based generated speech when training deepfake detectors.
+      </p>
+
+      <div class="table-container">
+        <table class="table is-striped is-fullwidth has-text-centered">
+          <thead>
+            <tr>
+              <th>Codec</th>
+              <th>QUA / AUX / DEC</th>
+              <th>Speaker p225<br><small>p225_273</small></th>
+              <th>Speaker p226<br><small>p226_010</small></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Ground truth (VCTK)</strong></td>
+              <td>—</td>
+              <td><audio controls preload="none"><source src="static/audios/p225_273.flac" type="audio/flac"></audio></td>
+              <td><audio controls preload="none"><source src="static/audios/p226_010.flac" type="audio/flac"></audio></td>
+            </tr>
+            <tr>
+              <td>SpeechTokenizer</td>
+              <td>Mvq / Sem / Time</td>
+              <td><audio controls preload="none"><source src="static/audios/p225_273_SpeechTokenizer_hubert_avg.flac" type="audio/flac"></audio></td>
+              <td><audio controls preload="none"><source src="static/audios/p226_010_SpeechTokenizer_hubert_avg.flac" type="audio/flac"></audio></td>
+            </tr>
+            <tr>
+              <td>DAC</td>
+              <td>Mvq / None / Time</td>
+              <td><audio controls preload="none"><source src="static/audios/p225_273_DAC24.flac" type="audio/flac"></audio></td>
+              <td><audio controls preload="none"><source src="static/audios/p226_010_DAC24.flac" type="audio/flac"></audio></td>
+            </tr>
+            <tr>
+              <td>SemantiCodec (1.40 kbps)</td>
+              <td>Mvq / Sem / Freq</td>
+              <td><audio controls preload="none"><source src="static/audios/p225_273_SemantiCodec_1.40kbps_16k.flac" type="audio/flac"></audio></td>
+              <td><audio controls preload="none"><source src="static/audios/p226_010_SemantiCodec_1.40kbps_16k.flac" type="audio/flac"></audio></td>
+            </tr>
+            <tr>
+              <td>FACodec</td>
+              <td>Mvq / Disent / Time</td>
+              <td><audio controls preload="none"><source src="static/audios/p225_273_FACodec_encodec-decoder-v2_16k.flac" type="audio/flac"></audio></td>
+              <td><audio controls preload="none"><source src="static/audios/p226_010_FACodec_encodec-decoder-v2_16k.flac" type="audio/flac"></audio></td>
+            </tr>
+            <tr>
+              <td>WavTokenizer (small)</td>
+              <td>Svq / None / Freq</td>
+              <td><audio controls preload="none"><source src="static/audios/p225_273_wavtokenizer_small_320_24k_4096.flac" type="audio/flac"></audio></td>
+              <td><audio controls preload="none"><source src="static/audios/p226_010_wavtokenizer_small_320_24k_4096.flac" type="audio/flac"></audio></td>
+            </tr>
+            <tr>
+              <td>TiCodec (1g1r)</td>
+              <td>Svq / Disent / Time</td>
+              <td><audio controls preload="none"><source src="static/audios/p225_273_ticodec_1g1r.flac" type="audio/flac"></audio></td>
+              <td><audio controls preload="none"><source src="static/audios/p226_010_ticodec_1g1r.flac" type="audio/flac"></audio></td>
+            </tr>
+            <tr>
+              <td>Spectral Codecs</td>
+              <td>Scq / None / Freq</td>
+              <td><audio controls preload="none"><source src="static/audios/p225_273_spectralcodecs.flac" type="audio/flac"></audio></td>
+              <td><audio controls preload="none"><source src="static/audios/p226_010_spectralcodecs.flac" type="audio/flac"></audio></td>
+            </tr>
+            <tr>
+              <td>SQ-Codec</td>
+              <td>Scq / None / Time</td>
+              <td><audio controls preload="none"><source src="static/audios/p225_273_sqcodec50dim9.flac" type="audio/flac"></audio></td>
+              <td><audio controls preload="none"><source src="static/audios/p226_010_sqcodec50dim9.flac" type="audio/flac"></audio></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
+
+      <p class="has-text-centered">
+        <small>
+          QUA: Mvq (multi-codebook), Svq (single-codebook), Scq (scalar).
+          AUX: Sem (semantic distillation), Disent (disentanglement), None.
+          DEC: Time or Freq (decoder domain).
+        </small>
+      </p>
+      <p class="has-text-centered">
+        Dataset details and label formats are on the
+        <a href="https://huggingface.co/datasets/CodecFake/CodecFake_Plus_Dataset" target="_blank">Hugging Face dataset page</a>.
+      </p>
     </div>
-  </div>
-</section>
-<!-- End paper abstract -->
+  </section>
 
-<section class="section">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Audio Samples</h2>
-    <p class="subtitle has-text-centered">
-      We show some audio samples generated by our proposed dataset creation pipeline. 
-      Ground truth (GT) samples are randomly sampled from the VCTK corpus.
-    </p>
-
-    <!-- ✅ 加上 table-container wrapper -->
-    <div class="table-container">
-      <table class="table is-striped is-fullwidth has-text-centered">
-        <thead>
-          <tr>
-            <th>Codec Model Used</th>
-            <th>GT File ID</th>
-            <th>GT Speech</th>
-            <th>Generated Speech</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>SpeechTokenizer</td>
-            <td>p225_273</td>
-            <td>
-              <audio controls preload="none">
-                <source src="static/audios/p227_001_StyleTTS2.flac" type="audio/flac">
-                Your browser does not support the audio tag.
-              </audio>
-            </td>
-            <td>
-              <audio controls preload="none">
-                <source src="static/audios/p227_001_StyleTTS2.flac" type="audio/flac">
-                Your browser does not support the audio tag.
-              </audio>
-            </td>
-          </tr>
-
-          <tr>
-            <td>academiccodec_hifi_16k_320d</td>
-            <td>p295_144</td>
-            <td>
-              <audio controls preload="none">
-                <source src="static/audios/p227_001_StyleTTS2.flac" type="audio/flac">
-              </audio>
-            </td>
-            <td>
-              <audio controls preload="none">
-                <source src="static/audios/p227_001_StyleTTS2.flac" type="audio/flac">
-              </audio>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+  <section class="section" id="papers">
+    <div class="container is-max-desktop content">
+      <h2 class="title is-3 has-text-centered">How the Papers Relate</h2>
+      <p class="has-text-justified">CodecFake+ is one part of our research line on codec-based deepfake speech. This table shows where it fits: the Dataset &amp; Detection papers cover how CodecFake speech is detected and how well detectors generalize, and the Source Tracing papers use CodecFake+ to trace how a fake was generated, from defining the tasks to advancing the methods.</p>
+      <div class="table-container">
+        <table class="table is-fullwidth">
+          <thead>
+            <tr>
+              <th>Paper</th>
+              <th>Position</th>
+              <th>Contribution</th>
+              <th>Builds on</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th colspan="4">Dataset &amp; Detection</th></tr>
+            <tr>
+              <td><a href="https://arxiv.org/abs/2606.07494" target="_blank">Proxy-to-Wild</a> (ISCSLP 2026)<br>🏆 Outstanding Paper</td>
+              <td>In-the-wild generalization</td>
+              <td>Domain-Shift Feature Augmentation; CoSG ExtEval</td>
+              <td>Extends CoSG Eval: 40 unseen models, long-form audio</td>
+            </tr>
+            <tr>
+              <td><strong><a href="https://doi.org/10.1109/TASLPRO.2026.3692291" target="_blank">CodecFake+</a> (TASLP 2026)</strong><br><a href="https://arxiv.org/abs/2501.08238" target="_blank">[arXiv]</a></td>
+              <td>Large-scale benchmark</td>
+              <td><strong>This dataset:</strong> CoRS, CoSG Eval, and the codec taxonomy</td>
+              <td>Extends CodecFake: 6 → 21 codec types, 3 → 17 CoSG systems, adds taxonomy</td>
+            </tr>
+            <tr>
+              <td><a href="https://doi.org/10.21437/Interspeech.2024-2093" target="_blank">CodecFake</a> (INTERSPEECH 2024)</td>
+              <td>Proof of concept</td>
+              <td>6 codec types (15 codec models), 3 CoSG systems</td>
+              <td>—</td>
+            </tr>
+            <tr><th colspan="4">Source Tracing</th></tr>
+            <tr>
+              <td><a href="https://arxiv.org/abs/2506.07294" target="_blank">SASTNet</a> (ASRU 2025)<br>🏆 Best Student Paper Nomination (Top 2.5%)<br><a href="https://github.com/ResponsibleGenAI/CodecFake-Source-Tracing" target="_blank">[Code]</a> <a href="https://xjchen.tech/docs/ASRU2025_BestStudentNom.pdf" target="_blank">[Award]</a></td>
+              <td>Advanced method</td>
+              <td>Semantic-Acoustic Source Tracing Network</td>
+              <td>Taxonomy-based source tracing tasks on CodecFake+</td>
+            </tr>
+            <tr>
+              <td><a href="https://arxiv.org/abs/2505.12994" target="_blank">Taxonomy-based source tracing</a> (INTERSPEECH 2025)<br><a href="https://www.isca-archive.org/interspeech_2025/chen25j_interspeech.html" target="_blank">[ISCA]</a> <a href="https://github.com/ResponsibleGenAI/CodecFake-Source-Tracing" target="_blank">[Code]</a></td>
+              <td>Task definition</td>
+              <td>Source tracing tasks via the codec taxonomy</td>
+              <td>CodecFake+ dataset and taxonomy</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Source tracing <a href="https://github.com/ResponsibleGenAI/CodecFake-Source-Tracing" target="_blank">code</a> and <a href="https://huggingface.co/CodecFake/CodecFake_Source_Tracing" target="_blank">model checkpoints</a> are available separately.</p>
     </div>
-  </div>
-</section>
+  </section>
 
-
-
-<!--BibTex citation -->
+  <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
+      <h2 class="title is-3 has-text-centered">BibTeX</h2>
+
       <div class="bibtex-header">
-        <h2 class="title">BibTeX</h2>
-        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
+        <div>
+          <h3 class="title is-5">Dataset</h3>
+          <p>If you use CodecFake+ or CoSG ExtEval, please cite:</p>
+        </div>
+        <button class="copy-bibtex-btn" onclick="copyBibTeX(this, 'bibtex-dataset')" title="Copy dataset BibTeX to clipboard">
           <i class="fas fa-copy"></i>
           <span class="copy-text">Copy</span>
         </button>
       </div>
-      <pre id="bibtex-code"><code>
-@article{chen2025codecfake+,
-  title   = {CodecFake+: A Large-Scale Neural Audio Codec-Based Deepfake Speech Dataset},
-  author  = {Chen, Xuanjun and Du, Jiawei and Wu, Haibin and Zhang, Lin and Lin, I and Chiu, I and Ren, Wenze and others},
-  journal = {arXiv preprint arXiv:2501.08238},
-  year    = {2025}
+      <pre id="bibtex-dataset"><code>@article{chen2026codecfake+,
+  title   = {{CodecFake+}: Codec-Based Resynthesized Data as a Proxy for Detecting {CodecFake} Speech},
+  author  = {Chen, Xuanjun and Du, Jiawei and Wu, Haibin and Zhang, Lin and Lin, I-Ming and Chiu, I-Hsiang and Ren, Wenze and Tseng, Yuan and Tsao, Yu and Jang, Jyh-Shing Roger and Lee, Hung-yi},
+  journal = {IEEE Transactions on Audio, Speech and Language Processing},
+  volume  = {34},
+  pages   = {2929--2944},
+  year    = {2026},
+  doi     = {10.1109/TASLPRO.2026.3692291}
+}
+
+@inproceedings{chen2026mitigating,
+  title     = {Mitigating Proxy-to-Wild Domain Gap in Deepfake Speech},
+  author    = {Chen, Xuanjun and Wu, Yun-Shing and Lu, Wei-Chung and Lin, Claire and Wu, Haibin and Lee, Hung-yi and Jang, Jyh-Shing Roger},
+  booktitle = {Proceedings of the International Symposium on Chinese Spoken Language Processing (ISCSLP)},
+  year      = {2026}
 }
 
 @inproceedings{wu24p_interspeech,
   title     = {{CodecFake: Enhancing Anti-Spoofing Models Against Deepfake Audios from Codec-Based Speech Synthesis Systems}},
   author    = {Haibin Wu and Yuan Tseng and Hung-yi Lee},
   year      = {2024},
-  booktitle = {{Interspeech 2024}},
+  booktitle = {{INTERSPEECH 2024}},
   pages     = {1770--1774},
   doi       = {10.21437/Interspeech.2024-2093},
   issn      = {2958-1796},
-}
-      </code></pre>
-    </div>
-</section>
-<!--End BibTex citation -->
+}</code></pre>
 
+      <div class="bibtex-header">
+        <div>
+          <h3 class="title is-5">Source Tracing</h3>
+          <p>If you build on our source tracing work, please cite:</p>
+        </div>
+        <button class="copy-bibtex-btn" onclick="copyBibTeX(this, 'bibtex-source-tracing')" title="Copy source tracing BibTeX to clipboard">
+          <i class="fas fa-copy"></i>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <pre id="bibtex-source-tracing"><code>@inproceedings{chen2025towards,
+  title     = {Towards Generalized Source Tracing for Codec-Based Deepfake Speech},
+  author    = {Chen, Xuanjun and Lin, I-Ming and Zhang, Lin and Wu, Haibin and Lee, Hung-yi and Jang, Jyh-Shing Roger},
+  booktitle = {2025 IEEE Automatic Speech Recognition and Understanding Workshop (ASRU)},
+  pages     = {1--8},
+  year      = {2025},
+  doi       = {10.1109/ASRU65441.2025.11434771}
+}
+
+@inproceedings{chen2025codec,
+  title     = {Codec-Based Deepfake Source Tracing via Neural Audio Codec Taxonomy},
+  author    = {Chen, Xuanjun and Lin, I-Ming and Zhang, Lin and Du, Jiawei and Wu, Haibin and Lee, Hung-yi and Jang, Jyh-Shing Roger},
+  booktitle = {{INTERSPEECH 2025}},
+  pages     = {1538--1542},
+  year      = {2025},
+  doi       = {10.21437/Interspeech.2025-1297}
+}</code></pre>
+    </div>
+  </section>
+  <!--End BibTex citation -->
+  </main>
 
   <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+              You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+              Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
+</body>
+</html>
